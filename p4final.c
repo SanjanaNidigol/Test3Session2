@@ -24,7 +24,7 @@ void input_coefficient(int n,float a[n])
 float evaluate_polynomial(int n,float a[n],float x)
 {
   int result=0;
-  for(int i=n;i>=0;i--)
+  for(int i=n;i>0;i--)
      {
        result=result+a[i]*x;
      }
