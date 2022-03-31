@@ -1,13 +1,10 @@
-
-//p1final
-gcc -g p1final.c
+ gcc -g p3final.c
  ./a.out
-Enter the values of num1,den1,num2 and den2
-1
+Enter the value of n
+3
+Enterv the value of r
 2
-1
-4
-The sum of two fraction is 3/4
+3 is the value ncr for given value of n and r 
  gdb a.out
 GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
 Copyright (C) 2018 Free Software Foundation, Inc.
@@ -25,41 +22,32 @@ For help, type "help".
 Type "apropos word" to search for commands related to "word"...
 Reading symbols from a.out...done.
 (gdb) b main 
-Breakpoint 1 at 0x892: file p1final.c, line 23.
+Breakpoint 1 at 0x893: file p3final.c, line 34.
 (gdb) r
 Starting program: /home/runner/Test3Session2/a.out 
 warning: Error disabling address space randomization: Operation not permitted
 
-Breakpoint 1, main () at p1final.c:23
-23  {
+Breakpoint 1, main () at p3final.c:34
+34  {
 (gdb) n
-25    input(&num1,&den1,&num2,&den2);
+36    input_n_r(&n,&r);
 (gdb) n
-Enter the values of num1,den1,num2 and den2
-3
-6
+Enter the value of n
 5
-8
-26    add(num1,den1,num2,den2,&num3,&den3,&gcd);
+Enterv the value of r
+4
+37    res=ncr(n,r);
 (gdb) n
-27    output(num1,den1,num2,den2,num3,den3,gcd);
-(gdb) p num1
-$1 = 3
-(gdb) p den1
-$2 = 6
-(gdb) p num2
+38    output(n,r,res);
+(gdb) p n
+$1 = 5
+(gdb) p r
+$2 = 4
+(gdb) p res
 $3 = 5
-(gdb) p den2
-$4 = 8
-(gdb) p num3
-$5 = 54
-(gdb) p den3
-$6 = 48
-(gdb) p gcd
-$7 = 6
 (gdb) n
-The sum of two fraction is 9/8
-28    return 0;
+5 is the value ncr for given value of n and r 
+39    return 0;
 (gdb) n
-29  }
+40  }
 (gdb)

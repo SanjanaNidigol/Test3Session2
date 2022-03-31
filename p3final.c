@@ -23,19 +23,19 @@ int ncr(int n,int r)
     {
       r1=r1*i;
     }
-  int result=n1/(c1*r1);
-  return result;
+  int res=n1/(c1*r1);
+  return res;
 }
-void output(int n,int r,int result)
+void output(int n,int r,int res)
 {
-  printf("%d is the value ncr for given value of n and r \n",result);
+  printf("%d is the value ncr for given value of n and r \n",res);
 }
 int main()
 {
-  int n,r,result;
+  int n,r,res;
   input_n_r(&n,&r);
-  result=ncr(n,r);
-  output(n,r,result);
+  res=ncr(n,r);
+  output(n,r,res);
   return 0;
 }
 

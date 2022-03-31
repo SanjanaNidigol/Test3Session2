@@ -8,10 +8,10 @@ int input_degree()
 }
 float input_x()
 {
-  float b;
+  float k;
   printf("Enter the value of x\n");
-  scanf("%f",&b);
-  return b;
+  scanf("%f",&k);
+  return k;
 }
 void input_coefficient(int n,float a[n])
 {
